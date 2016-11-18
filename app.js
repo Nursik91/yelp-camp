@@ -8,6 +8,12 @@ var bodyParser = require("body-parser");
 var campgrounds = [
     {name: "Salmon  creek", image: "http://cdn.playbuzz.com/cdn/00feef30-b267-490a-8be8-fee06f46333f/275827c3-1eac-4ffa-8fc0-e690468b5786.jpg"},
     {name: "Arizona Camp", image: "http://onmilwaukee.com/images/articles/ca/camping/camping_fullsize_story1.jpg"},
+    {name: "Burabai Camp", image: "http://battenkillriversports.com/wp-content/uploads/2016/02/18f63e24-1637-4897-a973-b0b80f6bbc24.jpg"},
+    {name: "Salmon  creek", image: "http://cdn.playbuzz.com/cdn/00feef30-b267-490a-8be8-fee06f46333f/275827c3-1eac-4ffa-8fc0-e690468b5786.jpg"},
+    {name: "Arizona Camp", image: "http://onmilwaukee.com/images/articles/ca/camping/camping_fullsize_story1.jpg"},
+    {name: "Burabai Camp", image: "http://battenkillriversports.com/wp-content/uploads/2016/02/18f63e24-1637-4897-a973-b0b80f6bbc24.jpg"},
+    {name: "Salmon  creek", image: "http://cdn.playbuzz.com/cdn/00feef30-b267-490a-8be8-fee06f46333f/275827c3-1eac-4ffa-8fc0-e690468b5786.jpg"},
+    {name: "Arizona Camp", image: "http://onmilwaukee.com/images/articles/ca/camping/camping_fullsize_story1.jpg"},
     {name: "Burabai Camp", image: "http://battenkillriversports.com/wp-content/uploads/2016/02/18f63e24-1637-4897-a973-b0b80f6bbc24.jpg"}
 ];
 
