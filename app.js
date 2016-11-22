@@ -1,10 +1,11 @@
 /**
  * Created by Nursike on 11/18/2016.
  */
-var express = require("express");
-var app = express();
-var bodyParser = require("body-parser");
-var mongoose = require("mongoose");
+var express = require("express"),
+    app = express(),
+    bodyParser = require("body-parser"),
+    mongoose = require("mongoose"),
+    Campground = require("./models/campground");
 
 var campgrounds = [
     {
@@ -39,29 +40,6 @@ var campgrounds = [
 mongoose.connect("mongodb://localhost/yelp_camp");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
-
-// SCHEMA SETUP
-var campgroundSchema = new mongoose.Schema({
-   name: String,
-    image: String,
-    description: String
-});
-
-var Campground = mongoose.model("Campground", campgroundSchema);
-
-// Campground.create(
-//     {
-//         name: "Arizona Camp",
-//         image: "http://onmilwaukee.com/images/articles/ca/camping/camping_fullsize_story1.jpg",
-//         description: "this is a huge granite hill, no bathrooms. No water. Beautiful granite!"
-//     }, function(err, campground) {
-//         if (err) {
-//             console.log(err);
-//         } else {
-//             console.log("Newly create campground");
-//             console.log(campground);
-//         }
-//     });
 
 app.get("/", function (req, res) {
     res.render("landing");
